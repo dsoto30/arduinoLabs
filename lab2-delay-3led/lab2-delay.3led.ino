@@ -5,6 +5,7 @@ int blueLedPin = 8;
 int redLedDelay = 50;
 int greenLedDelay = 500;
 int blueLedDelay = 1000;
+int inBetweenDelay = 1000;
 
 void setup()
 {
@@ -24,7 +25,7 @@ void loop()
         delay(redLedDelay);
     }
 
-    delay(1000);
+    delay(inBetweenDelay);
 
     for (int i = 0; i < 10; i++)
     {
@@ -34,7 +35,7 @@ void loop()
         delay(greenLedDelay);
     }
 
-    delay(1000);
+    delay(inBetweenDelay);
 
     for (int i = 0; i < 15; i++)
     {
@@ -44,5 +45,5 @@ void loop()
         delay(blueLedDelay);
     }
 
-    delay(1000);
+    delay(inBetweenDelay);
 }
